@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Auto help</title>
+    </head>
+
+    <body>
+        <form>
+            <p>Автопомощь</p>
+            <button>
+                <img src="" alt="cross">
+            </button>
+
+            <h3>Заявка</h3>
+            <p>
+                Отправьте нам заявку о том, что готовы помочь. Когда нам будет необходима помощь в транспортировке, мы позвоним вам.
+            </p>
+
+            <label for="name">
+                Фамилия и имя
+            </label>
+            <input type="text" id="name" name="name" placeholder="Фамилия и имя" minlength="2" maxlength="58">
+
+            <label for="tel">
+                Номер телефона
+            </label>
+            <input type="tel" id="tel" name="tel" placeholder="Номер телефона" pattern="375[0-9]{9}" required>
+            <p>Обязательное поле для заполнения</p>
+
+            <p>Выберите удобное время, когда вы сможете нам помочь</p>
+
+            <input type="date" id="date" name="date-data" min="2021-01-01" max="2100-01-01">
+            <input type="time" id="time" name="data-time" min="8:00" max="23:00">
+
+            <button>
+                <img src="" alt="plus">
+                <p>Добавить дату и время</p>
+            </button>
+
+            <input type="checkbox" id="weekdays" value="weekdays" name="days">
+            <label for="weekdays">
+                В любой будний день
+            </label>
+
+            <input type="checkbox" id="weekends" value="weekends" name="days">
+            <label for="weekends">
+                В любой выходной день
+            </label>
+
+            <p>Выберите вид автопомощи</p>
+
+            <input type="checkbox" id="necessary" value="necessary" name="vehicle-help">
+            <label for="necessary">
+                Доставка еды, медикаментов и других небольших вещей
+            </label>
+
+            <input type="checkbox" id="materials" value="materials" name="vehicle-help">
+            <label>
+                Доставка сена или соломы, строительных материлов 
+                для будок и других крупногабаритных вещей
+            </label>
+
+            <input type="checkbox" id="transporting-small" value="transporting-small" name="vehicle-help">
+            <label>
+                Транспортировка небольших собак и котов
+            </label>
+
+            <input type="checkbox" id="transporting-big" value="transporting-big" name="vehicle-help">
+            <label>
+                Транспортировка больших собак
+            </label>
+
+            <textarea id="note" name="note" placeholder="Замечания"cols="20" rows="3"></textarea>
+
+            <button type="submit">Отправить заявку</button>
+            <button type="reset">Отмена</button>
+
+        </form>
+    </body>
+
+</html>

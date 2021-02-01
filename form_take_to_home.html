@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Take to home</title>
+    </head>
+
+    <body>
+        <form>
+            <p>Забрать домой</p>
+            <article>
+                <img src="" alt="">
+                <p>Моник</p>
+                <p>Мальчик, 7 месяцев</p>
+                <p>Оставьте информацию о себе. Мы позвоним вам и договоримся, когда вы сможете забрать себе питомца.</p>
+            </article>
+
+            <label for="name">
+                Фамилия и имя
+            </label>
+            <input type="text" id="name" name="name" placeholder="Фамилия и имя" minlength="2" maxlength="58">
+
+            <label for="tel">
+                Номер телефона
+            </label>
+            <input type="tel" id="tel" name="tel" placeholder="Номер телефона" pattern="375[0-9]{9}" required>
+            <p>Обязательное поле для заполнения</p>
+
+            <label for="note">
+                Замечания
+            </label>
+            <textarea id="note" name="note" placeholder="Замечания"cols="20" rows="3"></textarea>
+
+            <p>
+                Если у вас есть вопросы, можете позвонить нам:
+                +375 (33) 6237879  Лена
+                +375 (29) 7877791  Ольга
+                +375 (29) 5837015  Рита
+            </p>
+
+            <button type="submit">Отправить</button>
+            <button type="reset">Отмена</button>
+        </form>
+    </body>
+</html>

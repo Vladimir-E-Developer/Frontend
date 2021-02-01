@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Take to home</title>
+    </head>
+
+    <body>
+        <form>
+            <p>Волонтерство</p>
+            <p>Заявка</p>
+            <p>
+                Отправьте нам заявку о том, что готовы помочь. Когда нам будет необходима помощь, мы позвоним вам.
+            </p>
+
+            <label for="name">
+                Фамилия и имя
+            </label>
+            <input type="text" id="name" name="name" placeholder="Фамилия и имя" minlength="2" maxlength="58">
+
+            <label for="tel">
+                Номер телефона (только белорусский номер)
+            </label>
+            <input type="tel" id="tel" name="tel" placeholder="Номер телефона" pattern="375[0-9]{9}" required>
+            <p>Обязательное поле для заполнения</p>
+
+            <label for="note">
+                Замечания
+            </label>
+            <textarea id="note" name="note" placeholder="Опишите, как вы сможете нам помочь и удобное время для вас"cols="20" rows="3"></textarea>
+            
+            <input type="radio" id="help-any-time" value="anytime" name="help-time">
+            <label>Хочу помогать на постоянной основе (расписание можно подобрать так, как будет удобно для всех)</label>
+
+            <input type="radio" id="help-empty-time" value="time"  name="help-time">
+            <label>Готов помогать иногда. Хочу выбрать удобное для меня время</label>
+
+            <button type="submit">Отправить заявку</button>
+            <button type="reset">Отмена</button>
+        </form>
+    </body>
+</html>
